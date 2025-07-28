@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    padding: 1rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+form, main {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Make star rating horizontal */
+.star-rating {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.star-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.star {
+    font-size: 24px;
+    color: gold;
+}
+/* Style the feature section with a box */
+fieldset.features-box {
+    border: 2px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+/* Align checkboxes with labels inline */
+.features-box label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.features-box input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+label, input, select, textarea, button {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+button, input[type="submit"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover, input[type="submit"]:hover {
+    background-color: #004999;
+}
+.center-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+

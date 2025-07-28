@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Morris Oliha"/>
+  <meta name="description" content="Review Confirmation Page"/>
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="css/form.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <h1>Thank You for Your Review!</h1>
+  <p>You have submitted <span id="review-count">0</span> review(s).</p>
+  <a href="form.html">Submit Another Review</a>
+
+  <footer class="center-footer">
+    <p>© 2025 Morris Oliha | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="js/form.js" defer></script>
+  <script>
+    // Count reviews using localStorage
+    let count = localStorage.getItem("reviewCount") || 0;
+    count++;
+    localStorage.setItem("reviewCount", count);
+    document.getElementById("review-count").textContent = count;
+
+    // Last Modified
+    document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+  </script>
+</body>
+</html>
+
