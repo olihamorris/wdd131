@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Games and Fun</title>
+  <meta name="description" content="Fun games and quizzes about the Benin Bronzes."/>
+  <meta name="author" content="Morris Oliha"/>
+  <link rel="stylesheet" href="styles/site.css"/>
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Benin Bronze for Kids</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="bronzes.html">Bronzes</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fun-intro">
+      <h2>Time to Have Some Fun!</h2>
+      <p>Let’s play and test what you know about the amazing Benin Bronzes.</p>
+    </section>
+
+    <section class="quiz-section">
+      <h2>🧠 Quick Quiz!</h2>
+      <form id="quizForm">
+        <label for="q1">1. What do the Benin Bronzes reveal about the Kingdom of Benin?</label>
+        <select id="q1" name="q1" required>
+          <option value="">Choose one</option>
+          <option value="Its military strength">Its military strength</option>
+          <option value="Its culture">Its culture</option>
+          <option value="All of the above">All of the above</option>
+        </select>
+
+        <label for="q2">2. What was the main purpose of the bronzes?</label>
+        <select id="q2" name="q2" required>
+          <option value="">Choose one</option>
+          <option value="To decorate the palace">To decorate the palace</option>
+          <option value="To honor the Oba">To honor the Oba</option>
+          <option value="All of the above">All of the above</option>
+        </select>
+
+        <label for="q3">3. What technique was used to create the Benin Bronzes?</label>
+        <select id="q3" name="q3" required>
+          <option value="">Choose one</option>
+          <option value="Lost‑wax casting">Lost‑wax casting</option>
+          <option value="Carving">Carving</option>
+          <option value="Printing">Printing</option>
+        </select>
+
+        <label for="q4">4. What do the Benin Bronzes depict?</label>
+        <select id="q4" name="q4" required>
+          <option value="">Choose one</option>
+          <option value="Only animals">Only animals</option>
+          <option value="Only the Oba">Only the Oba</option>
+          <option value="Historical events, royal figures, and everyday life">Historical events, royal figures, and everyday life</option>
+        </select>
+
+        <label for="q6">5. Where are the Benin Bronzes today?</label>
+        <select id="q6" name="q6" required>
+          <option value="">Choose one</option>
+          <option value="Only in Nigeria">Only in Nigeria</option>
+          <option value="Only in European museums">Only in European museums</option>
+          <option value="Scattered around the world in museums">Scattered around the world in museums</option>
+        </select>
+
+        <button type="submit">Check My Answers</button>
+      </form>
+      <div id="quizResult" class="quiz-result" hidden></div>
+    </section>
+
+    <section class="game-tip img-right">
+      <img src="images/benin-bronze-leopard.webp" alt="Benin brronze leopard." loading="lazy"/>
+      <div class="text">
+        <h2>🎨 Bronze Art Challenge</h2>
+        <p>Grab a pencil and draw your own version of a Benin bronze! Try drawing a king, a warrior, or a proud leopard.</p>
+      </div>
+    </section>
+
+    <section class="game-tip img-right">
+      <img src="images/line-drawing-of-the-oba.webp" alt="Line drawing of the Oba" loading="lazy"/>
+      <div class="text">
+        <p>Have fun making your own drawxing of the Oba!</p>
+      </div>
+    </section>
+
+    <section class="talk-box">
+      <h2>Chat Time with Oba Owl 🦉</h2>
+      <div class="chat-box">
+        <p><strong>Oba Owl:</strong> I love games! Did you enjoy the quiz?</p>
+        <p><strong>You:</strong> Yes! I want more questions!</p>
+        <p><strong>Oba Owl:</strong> Great! Keep learning and you will be a bronze expert soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Morris Oliha | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
